@@ -3,3 +3,5 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 _start.sh
+_infrastructure/.terraform
+_infrastructure/terraform.tfstate.*
