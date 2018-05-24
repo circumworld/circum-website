@@ -1,0 +1,42 @@
+---
+layout: default
+title: Circum
+---
+<div class="container-fluid">
+	<header class="row justify-content-center" style="background: url(/assets/img/bg.png); background-size: cover;">
+		<div class="col-8 col-md-4 text-center align-self-center p-5">
+			<img src="/assets/img/logo.png" class="img-fluid" />
+		</div>
+	</header>
+	<div class="container">
+		<h1 class="h1-responsive text-center my-5">Smarter Money for the Network Economy</h1>
+		{% include blocks/smarter-money.html %}
+		
+		<h2 class="h2-responsive mt-5 mb-4">The Problem</h2>
+		{% include blocks/the-problem.html %}
+		
+		<blockquote class="blockquote bq-primary text-primary my-5">
+			<h4 class="display-4">connecting billions of point of commerce through community</h4>
+		</blockquote>
+
+		<h2 class="h2-responsive mt-5 mb-4">The Solution</h2>
+		{% include blocks/the-solution.html %}
+
+		<h2 class="h2-responsive mt-5 mb-4">Timeline</h2>
+		<a href="/assets/img/roadmap.png"><img src="/assets/img/roadmap.png" class="img-fluid img-thumbnail" /></a>
+
+		<h2 class="h2-responsive mt-5 mb-4">The Team</h2>
+		{% include blocks/the-team.html %}
+	</div>
+	<div class="row text-center teal white-text pt-3 pb-5 mt-5">
+		<div class="container">
+			<h2 class="h2-responsive mt-5 mb-3">Features</h2>
+			{% include blocks/features.html %}
+		</div>
+	</div>
+	<footer class="row p-5 grey lighten-3">
+		<div class="col text-center align-self-center">
+			&copy; {{ 'now' | date: "%Y" }} Circum
+		</div>
+	</footer>
+</div>
