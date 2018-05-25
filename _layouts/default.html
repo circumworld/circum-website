@@ -10,8 +10,20 @@
     <link href="/assets/css/mdb.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-	{{ content }}
+<body class="grey lighten-3">
+    <div class="container-fluid white">
+        <header class="row justify-content-center" style="background: url(/assets/img/bg.png); background-size: cover;">
+            <div class="col-8 col-lg-6 col-xl-4 text-center align-self-center pt-5 pb-3">
+                <a href="/"><img src="/assets/img/logo.png" class="img-fluid" /></a>
+            </div>
+        </header>
+        {{ content }}
+        <footer class="row p-5 grey lighten-3">
+            <div class="col text-center align-self-center">
+                &copy; {{ 'now' | date: "%Y" }} Circum
+            </div>
+        </footer>
+    </div>
     <script type="text/javascript" src="/assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/assets/js/mdb.min.js"></script>
