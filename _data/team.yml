@@ -6,6 +6,10 @@
   image: petteri.png
   title: Co-Founder, Chief Product Officer
   
+- name: John Hammond
+  image: john.png
+  title: Chief Technical Officer
+  
 - name: Dr. Annina Ruottu
   image: annina.png
   title: Head of Corp Sustainability & Regulatory Affairs
@@ -21,3 +25,12 @@
 - name: Randall Griffiths
   image: randall.png
   title: Commercial Adviser
+  
+- name: Simon Sorockyj
+  image: simon.png
+  title: Blockchain Advisor
+  
+- name: Kim Hansen
+  image: kim.png
+  title: ICO Advisor
+  
