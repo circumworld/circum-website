@@ -1,0 +1,81 @@
+html,
+body
+	background-color: $secondary-color 
+    
+// typography
+body 
+    font-size: 18px
+    font-family: 'Avenir Next' 
+    color: #fff
+    counter-reset: section
+    @media (max-width: 767px)
+        font-size: 16px
+    @media (max-width: 360px)
+        font-size: 14px
+
+
+.fancybox-lock
+    overflow: initial!important
+
+.overflow
+	overflow: hidden
+
+// other overall settings
++placeholder
+    opacity: 1
+
+
+// preloader
+.overlay 
+    position: fixed
+    background-color: #000
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 101
+    display: flex
+    align-items: center
+    justify-content: center
+    canvas 
+        position: absolute
+        left: 0
+        top: 0
+        opacity: 0
+        visibility: hidden
+        transition: all 1s ease-out
+
+    &__img 
+        display: block
+        width: 200px
+        position: relative
+        z-index: 2
+        transform: scale(.6)
+        opacity: 0
+        visibility: hidden
+        transition: all 2s ease-out
+        img 
+            display: block
+            max-width: 100%
+
+    // mod
+    &.ready
+        canvas
+            opacity: 1
+            visibility: visible
+        
+        .overlay__img 
+            opacity: 1
+            visibility: visible
+            transform: scale(1)
+
+    &.out
+        transition: 2s all .5s ease-out
+        opacity: 0
+        visibility: hidden
+        pointer-events: none
+        .overlay__img 
+            transition: all 1s ease-out
+            opacity: 0
+            visibility: hidden
+            transform: scale(.6)
