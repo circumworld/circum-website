@@ -1,0 +1,78 @@
+.footer
+	//background-color: $secondary-color
+	color: #fff
+	text-align: center
+	position: relative
+	z-index: 0
+	padding: 300px 0 30px
+	overflow: hidden
+	
+	@media (max-width: 1499px)
+		padding-top: 75px 
+		
+	
+	&:before
+		content: ''
+		width: 635px
+		height: 769px
+		position: absolute
+		bottom: 0
+		left: 0
+		background-image: url(../images/footer-big-logo.png)
+		background-size: contain
+		background-repeat: no-repeat 
+		
+		@media (max-width: 1499px)
+			width: 500px
+			height: 500px
+			
+		@media (max-width: 1199px)
+			opacity: 0.5
+	
+	.container
+		position: relative
+	
+
+
+
+	&-subscribe
+		text-align: center
+		
+		h3
+			margin-bottom: 50px
+			font-weight: 700  
+			
+
+		.mailchimp-form
+			margin: 0 auto
+			
+
+
+	.socials
+		margin: 60px auto 
+		
+		ul
+			justify-content: center
+			
+
+		.social-item
+			width: 46px
+			height: 46px
+			padding: 6px
+			
+			&:hover
+				background-color: transparent
+				
+				svg
+					display: block
+					width: 34px
+					path
+						fill: $primary-color!important
+						
+
+
+
+	&-copyright
+		margin-top: 30px
+		font-size: 14px
+		opacity: 0.8  

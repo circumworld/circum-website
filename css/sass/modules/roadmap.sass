@@ -1,0 +1,336 @@
+.roadmap
+    width: 897px
+    padding-top: 1097px
+    background-image: url('../images/roadmap.png')
+    background-repeat: no-repeat
+    background-position: 0 -5px
+    background-size: 100%
+    margin: 0 auto
+    position: relative
+    margin-bottom: 170px
+    margin-top: -105px
+    
+    @media (max-width: 1199px)
+        width: 600px
+        padding-top: 720px 
+        background-position: 50% 
+        background-size: 100% 100% 
+        
+    @media (max-width: 991px)
+        background-image: none 
+        padding-top: 0
+        height: auto 
+        margin-top: 0
+        width: 100%
+        
+        &:before
+            content: ''
+            width: 2px
+            height: 100%
+            position: absolute
+            left: 50%
+            margin-left: -1px
+            background-color: #96AFB2
+            top: 20px
+            bottom: 0
+    
+    
+    &__end
+        position: absolute
+        bottom: 0
+        left: 50%
+        top: 100%
+        transform: translate(-50%, -50%)
+        max-width: 100vw
+        z-index: 2
+        
+        @media (max-width: 575px)
+            width: 800px
+            max-width: 800px 
+         
+    .step 
+        position: absolute
+        z-index: 10
+        text-align: center
+        
+        @media (max-width: 991px)
+            position: relative
+            top: auto!important
+            left: auto!important
+            right: auto!important
+            width: 50%
+            transform: none!important
+            margin-bottom: 40px 
+            
+            i
+                margin: 0!important
+                
+            p
+                width: 100%!important
+            
+            &:nth-child(odd)
+                text-align: right
+                
+                i
+                    right: 0
+                    top: 0
+                    transform: translateX(50%)
+                    margin: 0
+                    position: absolute
+                    
+                p
+                    text-align: inherit
+                    padding-right: 30px 
+                    
+                .step__text
+                    border-radius: 15px 0 0 15px
+                    border-right: none 
+                    
+            &:nth-child(even)
+                text-align: left
+                margin-left: auto 
+                
+                i
+                    left: 0
+                    top: 0
+                    transform: translateX(-50%)
+                    margin: 0
+                    position: absolute
+                    
+                p
+                    text-align: inherit
+                    padding-left: 30px 
+                    
+                .step__text
+                    border-radius: 0 15px 15px 0
+                    border-left: none 
+                    
+            &:last-of-type
+                margin: 0 auto!important
+                text-align: center!important
+                
+                p
+                    padding: 0
+                    
+        
+        &__heading
+            text-transform: uppercase
+            font-size: 18px
+            font-weight: 700
+            text-align: inherit
+            cursor: pointer
+            
+            @media (max-width: 575px)
+                font-size: 14px
+                max-width: 100% !important
+                min-width: initial!important 
+                font-weight: 600
+                text-transform: normal 
+                 
+            i 
+                display: block
+                width: 32px
+                height: 32px
+                margin: 0 auto 25px
+                border-radius: 50%
+                background-color: rgba(76,169,143, .2)
+                position: relative
+                &:after
+                    display: block
+                    content: ''
+                    width: 18px
+                    height: 18px
+                    border-radius: 50%
+                    background-color: rgba(76,169,143, 1)
+                    position: absolute
+                    left: 0
+                    right: 0
+                    top: 0
+                    bottom: 0
+                    margin: auto
+            
+        &__text
+            width: 426px
+            padding: 50px
+            min-height: 362px
+            position: absolute
+            bottom: calc(100% - 20px)
+            left: 50%
+            transform: translate(-50%, -20px)
+            z-index: 2
+            opacity: 0
+            visibility: hidden
+            transition: all .2s ease-out
+            text-align: left
+            
+            @media (min-width: 1400px)
+                background: url('../images/roadmap-text-bg.png')
+                background-size: 100% 100%
+                
+            @media (max-width: 1399px)
+                height: auto
+                min-height: initial
+                border: 1px solid #96AFB2
+                background: linear-gradient(45deg, rgba(76,169,143,0.8) 0%, rgba(45,26,73,0.8) 100%)
+                border-radius: 15px
+                padding: 20px
+                width: 360px 
+                bottom: 100%
+                margin-bottom: 20px 
+                translate(-50%, 0)
+                
+            @media (max-width: 991px)
+                position: static
+                width: 100%
+                opacity: 1
+                transform: none!important
+                visibility: visible
+                margin: 20px 0 0
+                
+            @media (max-width: 575px)
+                font-size: 12px
+                padding: 0.75em 
+                
+            
+            ul 
+                list-style-type: none
+                font-size: 16px
+                font-weight: 500
+                
+                @media (max-width: 575px)
+                    font-size: inherit
+                    
+                li 
+                    display: block
+                    padding-left: 14px
+                    position: relative
+                    margin-bottom: 5px
+                    &:before
+                        content: ''
+                        display: block
+                        position: absolute
+                        top: 8px
+                        left: 0
+                        width: 6px
+                        height: 6px
+                        background: #6003c8
+                        border-radius: 50%
+            h3 
+                margin-bottom: 20px
+                font-size: 18px
+                text-transform: uppercase
+                
+                @media (max-width: 575px)
+                    font-size: 1.1em
+                    margin-bottom: 0.5em
+                    text-transform: normal 
+                    font-weight: 600 
+
+        // mod
+        &.active
+            .step__text
+                opacity: 1
+                visibility: visible
+                
+                @media (min-width: 1399px)
+                    transform: translate(-50%, 0px)
+
+        &--right
+            .step__heading
+                display: flex
+                align-items: center
+                i 
+                    margin: 0 25px 0 0
+                    
+            @media (max-width: 1399px)
+                .step__text
+                    right: 0
+                    left: auto
+                    transform: none!important
+
+        &--left
+            .step__heading
+                display: flex
+                align-items: center
+                flex-direction: row-reverse
+                i 
+                    margin: 0 0 0 25px
+            @media (max-width: 1399px)        
+                .step__text
+                    left: 0
+                    right: auto
+                    transform: none!important
+
+        // position
+        &:first-child
+            top: -16px
+            left: 50%
+            transform: translateX(-50%)
+        &:nth-child(2)
+            top: 8%
+            left: calc(100% - 20px)
+        &:nth-child(3)
+            top: 20.4%
+            left: 50%
+            transform: translateX(-50%)
+        &:nth-child(4)
+            top: 31%
+            right: calc(100% - 20px)
+        &:nth-child(5)
+            top: 42.2%
+            left: 50%
+            transform: translateX(-50%)
+        &:nth-child(6)
+            top: 52.6%
+            left: calc(89% - 20px)
+        &:nth-child(7)
+            top: 63.8%
+            left: 50%
+            transform: translateX(-50%)
+        &:nth-child(8)
+            top: 73.5%
+            right: calc(86.3% - 20px)
+            .step__heading
+                min-width: 235px
+        &:last-of-type
+            bottom: -200px
+            left: 50%
+            transform: translateX(-50%)
+
+
+.roadmap-section
+    position: relative
+    background-image: url('../images/roadmap-stars.png'), url('../images/roadmap-stars-1.png'), url('../images/body-lines.png')
+    background-repeat: no-repeat, no-repeat, repeat
+    background-position: center  right, -10% -200%, center center
+    background-size: 40% auto, auto auto, auto auto
+    &__text
+        position: absolute
+        display: block
+        top: 0
+        bottom: 0
+        margin: auto
+        right: 30px
+        max-width: 12vw
+    &:before
+        content: ''
+        width: 100%
+        height: 500px
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        pointer-events: none
+        z-index: 0
+        background: linear-gradient(to top, rgba(29,15,36,0) 0%, rgba(29,15,36,.5) 3%, rgba(29,15,36,1) 100%)
+    &:after
+        content: ''
+        width: 100%
+        height: 200px
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        pointer-events: none
+        z-index: 0
+        background: linear-gradient(to bottom, rgba(29,15,36,0) 0%, rgba(29,15,36,.5) 3%, rgba(29,15,36,1) 100%)

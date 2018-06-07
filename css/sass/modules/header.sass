@@ -1,0 +1,161 @@
+.header
+	+position(fixed, 0, 0, auto, 0)
+	+transition(all, .4s)
+	z-index: 100
+	
+	height: 110px
+	color: #FFF
+	
+	.container
+		height: 100% 
+		
+		.row
+			height: 100%
+
+	.logo
+		margin-bottom: -15px
+		display: block
+		width: 245px
+		
+		img
+			display: block
+			max-width: 100% 
+			transition: all .2s
+
+	@media( max-width: 991px)
+		.logo
+			width: 160px	
+	@media( max-width: 767px)
+		height: 80px	
+	@media( max-width: 767px)
+		.logo
+			width: 100px
+	@media( max-width: 440px)
+		height: 60px	
+		.logo
+			width: 80px
+	@media( max-width: 400px)
+		.logo
+			width: 60px	
+		.btn 
+			height: 30px
+			padding: 4px 12px
+			font-size: 10px
+			font-weight: 400
+
+
+.headroom--unpinned
+    transform: translateY(-100%)
+.headroom--pinned:not(.headroom--top),
+.headroom--bottom 
+	height: 90px
+	transform: translateY(0)
+	background-color: #1D0F24 !important
+	.logo 
+		img 
+			max-height: 50px
+	@media( max-width: 767px)
+		height: 70px
+	@media( max-width: 440px)
+		height: 45px
+		.logo 
+			img 
+				max-height: 30px
+
+
+/* ------------------------------------ */
+/*  NAV STYLES  */
+
+.page-menu
+	ul
+		list-style-type: none
+		font-size: 16px
+		@media( max-width: 991px)
+			font-size: 12px
+		@media( max-width: 767px)
+			font-size: 10px
+		@media( max-width: 360px)
+			font-size: 8px
+		li
+			display: inline-block
+			vertical-align: middle
+			margin: 0 15px
+			@media( max-width: 991px)
+				margin: 0 5px
+			@media( max-width: 520px)
+				margin: 0 2px
+			a
+				color: #fff
+				text-transform: none
+				transition: all .2s ease-out
+				position: relative
+				&:before
+					display: block
+					content: '['
+					position: absolute
+					left: 0
+					top: 0
+					bottom: 0
+					margin: auto
+					transition: all .2s ease-out
+					opacity: 0
+					visibility: hidden
+					height: 20px
+					line-height: 20px
+					transform: translateY(-1px)
+				&:after
+					display: block
+					content: ']'
+					position: absolute
+					right: 0
+					top: 0
+					bottom: 0
+					margin: auto
+					transition: all .2s ease-out
+					opacity: 0
+					visibility: hidden
+					height: 20px
+					line-height: 20px
+					transform: translateY(-1px)
+				&:not(.btn):hover
+					&:after
+						opacity: 1
+						visibility: visible
+						right: -8px
+						@media (max-width:600px)
+							right: -5px
+					&:before
+						opacity: 1
+						visibility: visible
+						left: -8px
+						@media (max-width:600px)
+							left: -5px
+	& + .socials
+		padding-left: 15px 
+		@media( max-width: 991px)
+			padding-left: 10px
+		@media( max-width: 500px)
+			display: none
+
+
+
+
+.header-navigation
+	display: flex
+	align-items: center
+	justify-content: center
+
+
+/* ------------------------------------ */
+/*  MENU BUTTON  */
+
+.menu-button
+	display: none
+	+position(fixed, 15px, 10px, auto, auto)
+	background: white
+	border-radius: 50%
+	box-shadow: 0 5px 10px rgba(black, 0.5)
+	cursor: pointer
+	transform: rotate(0deg)
+	transition: .5s ease-in-out
+	cursor: pointer

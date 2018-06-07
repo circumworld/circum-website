@@ -1,0 +1,1293 @@
+/* Uncomment and set these variables to customize the grid. */
+
+$gutter: 15px
+
+.row 
+    box-sizing: border-box
+    display: -ms-flexbox
+    display: -webkit-box
+    display: flex
+    -ms-flex: 0 1 auto
+    -webkit-box-flex: 0
+    flex: 0 1 auto
+    -ms-flex-direction: row
+    -webkit-box-orient: horizontal
+    -webkit-box-direction: normal
+    flex-direction: row
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    margin-left: -$gutter
+    margin-right: -$gutter
+
+
+.row.reverse 
+    -ms-flex-direction: row-reverse
+    -webkit-box-orient: horizontal
+    -webkit-box-direction: reverse
+    flex-direction: row-reverse
+
+
+.col.reverse 
+    -ms-flex-direction: column-reverse
+    -webkit-box-orient: vertical
+    -webkit-box-direction: reverse
+    flex-direction: column-reverse
+
+
+.col 
+    -webkit-flex-grow: 1
+    -ms-flex-positive: 1
+    -webkit-box-flex: 1
+    flex-grow: 1
+    -ms-flex-preferred-size: 0
+    flex-basis: 0
+    max-width: 100%
+    
+.col, 
+.col-1, 
+.col-10, 
+.col-11, 
+.col-12, 
+.col-2, 
+.col-3, 
+.col-4, 
+.col-5, 
+.col-6, 
+.col-7, 
+.col-8, 
+.col-9, 
+.col-auto, 
+.col-lg, 
+.col-lg-1, 
+.col-lg-10, 
+.col-lg-11, 
+.col-lg-12, 
+.col-lg-2, 
+.col-lg-3, 
+.col-lg-4, 
+.col-lg-5, 
+.col-lg-6, 
+.col-lg-7, 
+.col-lg-8, 
+.col-lg-9, 
+.col-lg-auto, 
+.col-md, 
+.col-md-1, 
+.col-md-10, 
+.col-md-11, 
+.col-md-12, 
+.col-md-2, 
+.col-md-3, 
+.col-md-4, 
+.col-md-5, 
+.col-md-6, 
+.col-md-7, 
+.col-md-8, 
+.col-md-9, 
+.col-md-auto, 
+.col-sm, 
+.col-sm-1, 
+.col-sm-10, 
+.col-sm-11, 
+.col-sm-12, 
+.col-sm-2, 
+.col-sm-3, 
+.col-sm-4, 
+.col-sm-5, 
+.col-sm-6, 
+.col-sm-7, 
+.col-sm-8, 
+.col-sm-9, 
+.col-sm-auto, 
+.col-xl, 
+.col-xl-1, 
+.col-xl-10, 
+.col-xl-11, 
+.col-xl-12,
+.col-xl-2, 
+.col-xl-3, 
+.col-xl-4, 
+.col-xl-5, 
+.col-xl-6, 
+.col-xl-7, 
+.col-xl-8, 
+.col-xl-9, 
+.col-xl-auto
+    padding-left: 15px
+    padding-right: 15px  
+    position: relative
+    width: 100%
+    min-height: 1px
+    
+
+.col-auto
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
+    width: auto
+    max-width: none
+
+.first 
+    -ms-flex-order: -1
+    -webkit-box-ordinal-group: 0
+    order: -1
+
+
+.last 
+    -ms-flex-order: 1
+    -webkit-box-ordinal-group: 2
+    order: 1
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 
+    box-sizing: border-box
+    -ms-flex: 0 0 auto
+    -webkit-box-flex: 0
+    flex: 0 0 auto
+    padding-right: $gutter
+    padding-left: $gutter
+
+.col-1 
+    -ms-flex-preferred-size: 8.333%
+    flex-basis: 8.333%
+    max-width: 8.333%
+
+
+.col-2 
+    -ms-flex-preferred-size: 16.667%
+    flex-basis: 16.667%
+    max-width: 16.667%
+
+
+.col-3 
+    -ms-flex-preferred-size: 25%
+    flex-basis: 25%
+    max-width: 25%
+
+
+.col-4 
+    -ms-flex-preferred-size: 33.333%
+    flex-basis: 33.333%
+    max-width: 33.333%
+
+
+.col-5 
+    -ms-flex-preferred-size: 41.667%
+    flex-basis: 41.667%
+    max-width: 41.667%
+
+
+.col-6 
+    -ms-flex-preferred-size: 50%
+    flex-basis: 50%
+    max-width: 50%
+
+
+.col-7 
+    -ms-flex-preferred-size: 58.333%
+    flex-basis: 58.333%
+    max-width: 58.333%
+
+
+.col-8 
+    -ms-flex-preferred-size: 66.667%
+    flex-basis: 66.667%
+    max-width: 66.667%
+
+
+.col-9 
+    -ms-flex-preferred-size: 75%
+    flex-basis: 75%
+    max-width: 75%
+
+
+.col-10 
+    -ms-flex-preferred-size: 83.333%
+    flex-basis: 83.333%
+    max-width: 83.333%
+
+
+.col-11 
+    -ms-flex-preferred-size: 91.667%
+    flex-basis: 91.667%
+    max-width: 91.667%
+
+
+.col-12 
+    -ms-flex-preferred-size: 100%
+    flex-basis: 100%
+    max-width: 100%
+
+
+.col-offset-1 
+    margin-left: 8.333%
+
+
+.col-offset-2 
+    margin-left: 16.667%
+
+
+.col-offset-3 
+    margin-left: 25%
+
+
+.col-offset-4 
+    margin-left: 33.333%
+
+
+.col-offset-5 
+    margin-left: 41.667%
+
+
+.col-offset-6 
+    margin-left: 50%
+
+
+.col-offset-7 
+    margin-left: 58.333%
+
+
+.col-offset-8 
+    margin-left: 66.667%
+
+
+.col-offset-9 
+    margin-left: 75%
+
+
+.col-offset-10 
+    margin-left: 83.333%
+
+
+.col-offset-11 
+    margin-left: 91.667%
+
+
+.text-center
+    text-align: center
+
+.text-right
+    text-align: right
+    
+.text-left
+    text-align: left
+
+.justify-content-start 
+    -ms-flex-pack: start
+    -webkit-box-pack: start
+    justify-content: flex-start
+    text-align: start
+
+
+.justify-content-center 
+    -ms-flex-pack: center
+    -webkit-box-pack: center
+    justify-content: center
+    text-align: center
+
+
+.justify-content-end 
+    -ms-flex-pack: end
+    -webkit-box-pack: end
+    justify-content: flex-end
+    text-align: end
+
+
+.align-items-start 
+    -ms-flex-align: start
+    -webkit-box-align: start
+    align-items: flex-start
+
+
+.align-items-center 
+    -ms-flex-align: center
+    -webkit-box-align: center
+    align-items: center
+
+.align-items-stretch 
+    -ms-flex-align: stretch
+    -webkit-box-align: stretch
+    align-items: stretch
+
+.align-items-end 
+    -ms-flex-align: end
+    -webkit-box-align: end
+    align-items: flex-end
+
+
+.justify-content-around 
+    -ms-flex-pack: distribute
+    justify-content: space-around
+
+
+.justify-content-between 
+    -ms-flex-pack: justify
+    -webkit-box-pack: justify
+    justify-content: space-between
+
+
+.first 
+    -ms-flex-order: -1
+    -webkit-box-ordinal-group: 0
+    order: -1
+
+
+.last 
+    -ms-flex-order: 1
+    -webkit-box-ordinal-group: 2
+    order: 1
+
+
+@media only screen and (min-width: 576px) 
+    .col-sm-auto 
+        -ms-flex: 0 0 auto
+            flex: 0 0 auto
+        width: auto
+        max-width: none
+  
+    .col-sm,
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12 
+        box-sizing: border-box
+        -ms-flex: 0 0 auto
+        -webkit-box-flex: 0
+        flex: 0 0 auto
+        padding-right: $gutter
+        padding-left: $gutter
+    
+
+    .col-sm 
+        -webkit-flex-grow: 1
+        -ms-flex-positive: 1
+        -webkit-box-flex: 1
+        flex-grow: 1
+        -ms-flex-preferred-size: 0
+        flex-basis: 0
+        max-width: 100%
+    
+
+    .col-sm-1 
+        -ms-flex-preferred-size: 8.333%
+        flex-basis: 8.333%
+        max-width: 8.333%
+    
+
+    .col-sm-2 
+        -ms-flex-preferred-size: 16.667%
+        flex-basis: 16.667%
+        max-width: 16.667%
+    
+
+    .col-sm-3 
+        -ms-flex-preferred-size: 25%
+        flex-basis: 25%
+        max-width: 25%
+    
+
+    .col-sm-4 
+        -ms-flex-preferred-size: 33.333%
+        flex-basis: 33.333%
+        max-width: 33.333%
+    
+
+    .col-sm-5 
+        -ms-flex-preferred-size: 41.667%
+        flex-basis: 41.667%
+        max-width: 41.667%
+    
+
+    .col-sm-6 
+        -ms-flex-preferred-size: 50%
+        flex-basis: 50%
+        max-width: 50%
+    
+
+    .col-sm-7 
+        -ms-flex-preferred-size: 58.333%
+        flex-basis: 58.333%
+        max-width: 58.333%
+    
+
+    .col-sm-8 
+        -ms-flex-preferred-size: 66.667%
+        flex-basis: 66.667%
+        max-width: 66.667%
+    
+
+    .col-sm-9 
+        -ms-flex-preferred-size: 75%
+        flex-basis: 75%
+        max-width: 75%
+    
+
+    .col-sm-10 
+        -ms-flex-preferred-size: 83.333%
+        flex-basis: 83.333%
+        max-width: 83.333%
+    
+
+    .col-sm-11 
+        -ms-flex-preferred-size: 91.667%
+        flex-basis: 91.667%
+        max-width: 91.667%
+    
+
+    .col-sm-12 
+        -ms-flex-preferred-size: 100%
+        flex-basis: 100%
+        max-width: 100%
+    
+
+    .col-sm-offset-1 
+        margin-left: 8.333%
+    
+
+    .col-sm-offset-2 
+        margin-left: 16.667%
+    
+
+    .col-sm-offset-3 
+        margin-left: 25%
+    
+
+    .col-sm-offset-4 
+        margin-left: 33.333%
+    
+
+    .col-sm-offset-5 
+        margin-left: 41.667%
+    
+
+    .col-sm-offset-6 
+        margin-left: 50%
+    
+
+    .col-sm-offset-7 
+        margin-left: 58.333%
+    
+
+    .col-sm-offset-8 
+        margin-left: 66.667%
+    
+
+    .col-sm-offset-9 
+        margin-left: 75%
+    
+
+    .col-sm-offset-10 
+        margin-left: 83.333%
+    
+
+    .col-sm-offset-11 
+        margin-left: 91.667%
+        
+    .text-center-sm
+        text-align: center
+
+    .text-right-sm
+        text-align: right
+        
+    .text-left-sm
+        text-align: left
+    
+
+    .justify-content-start-sm 
+        -ms-flex-pack: start
+        -webkit-box-pack: start
+        justify-content: flex-start
+        text-align: start
+    
+
+    .justify-content-center-sm 
+        -ms-flex-pack: center
+        -webkit-box-pack: center
+        justify-content: center
+        text-align: center
+    
+
+    .justify-content-end-sm 
+        -ms-flex-pack: end
+        -webkit-box-pack: end
+        justify-content: flex-end
+        text-align: end
+    
+
+    .align-items-start-sm 
+        -ms-flex-align: start
+        -webkit-box-align: start
+        align-items: flex-start
+    
+
+    .align-items-center-sm 
+        -ms-flex-align: center
+        -webkit-box-align: center
+        align-items: center
+
+    .align-items-stretch-sm 
+        -ms-flex-align: stretch
+        -webkit-box-align: stretch
+        align-items: stretch
+    
+
+    .align-items-end-sm 
+        -ms-flex-align: end
+        -webkit-box-align: end
+        align-items: flex-end
+    
+
+    .justify-content-around-sm 
+        -ms-flex-pack: distribute
+        justify-content: space-around
+    
+
+    .justify-content-between-sm 
+        -ms-flex-pack: justify
+        -webkit-box-pack: justify
+        justify-content: space-between
+    
+
+    .first-sm 
+        -ms-flex-order: -1
+        -webkit-box-ordinal-group: 0
+        order: -1
+    
+
+    .last-sm 
+        -ms-flex-order: 1
+        -webkit-box-ordinal-group: 2
+        order: 1
+    
+
+
+@media only screen and (min-width: 768px) 
+    .col-md-auto 
+        -ms-flex: 0 0 auto
+            flex: 0 0 auto
+        width: auto
+        max-width: none
+    .col-md,
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 
+        box-sizing: border-box
+        -ms-flex: 0 0 auto
+        -webkit-box-flex: 0
+        flex: 0 0 auto
+        padding-right: $gutter
+        padding-left: $gutter
+    
+
+    .col-md 
+        -webkit-flex-grow: 1
+        -ms-flex-positive: 1
+        -webkit-box-flex: 1
+        flex-grow: 1
+        -ms-flex-preferred-size: 0
+        flex-basis: 0
+        max-width: 100%
+    
+
+    .col-md-1 
+        -ms-flex-preferred-size: 8.333%
+        flex-basis: 8.333%
+        max-width: 8.333%
+    
+
+    .col-md-2 
+        -ms-flex-preferred-size: 16.667%
+        flex-basis: 16.667%
+        max-width: 16.667%
+    
+
+    .col-md-3 
+        -ms-flex-preferred-size: 25%
+        flex-basis: 25%
+        max-width: 25%
+    
+
+    .col-md-4 
+        -ms-flex-preferred-size: 33.333%
+        flex-basis: 33.333%
+        max-width: 33.333%
+    
+
+    .col-md-5 
+        -ms-flex-preferred-size: 41.667%
+        flex-basis: 41.667%
+        max-width: 41.667%
+    
+
+    .col-md-6 
+        -ms-flex-preferred-size: 50%
+        flex-basis: 50%
+        max-width: 50%
+    
+
+    .col-md-7 
+        -ms-flex-preferred-size: 58.333%
+        flex-basis: 58.333%
+        max-width: 58.333%
+    
+
+    .col-md-8 
+        -ms-flex-preferred-size: 66.667%
+        flex-basis: 66.667%
+        max-width: 66.667%
+    
+
+    .col-md-9 
+        -ms-flex-preferred-size: 75%
+        flex-basis: 75%
+        max-width: 75%
+    
+
+    .col-md-10 
+        -ms-flex-preferred-size: 83.333%
+        flex-basis: 83.333%
+        max-width: 83.333%
+    
+
+    .col-md-11 
+        -ms-flex-preferred-size: 91.667%
+        flex-basis: 91.667%
+        max-width: 91.667%
+    
+
+    .col-md-12 
+        -ms-flex-preferred-size: 100%
+        flex-basis: 100%
+        max-width: 100%
+    
+
+    .col-md-offset-1 
+        margin-left: 8.333%
+    
+
+    .col-md-offset-2 
+        margin-left: 16.667%
+    
+
+    .col-md-offset-3 
+        margin-left: 25%
+    
+
+    .col-md-offset-4 
+        margin-left: 33.333%
+    
+
+    .col-md-offset-5 
+        margin-left: 41.667%
+    
+
+    .col-md-offset-6 
+        margin-left: 50%
+    
+
+    .col-md-offset-7 
+        margin-left: 58.333%
+    
+
+    .col-md-offset-8 
+        margin-left: 66.667%
+    
+
+    .col-md-offset-9 
+        margin-left: 75%
+    
+
+    .col-md-offset-10 
+        margin-left: 83.333%
+    
+
+    .col-md-offset-11 
+        margin-left: 91.667%
+        
+    .text-center-md
+        text-align: center
+
+    .text-right-md
+        text-align: right
+        
+    .text-left-md
+        text-align: left
+    
+
+    .justify-content-start-md 
+        -ms-flex-pack: start
+        -webkit-box-pack: start
+        justify-content: flex-start
+        text-align: start
+    
+
+    .justify-content-center-md 
+        -ms-flex-pack: center
+        -webkit-box-pack: center
+        justify-content: center
+        text-align: center
+    
+
+    .justify-content-end-md 
+        -ms-flex-pack: end
+        -webkit-box-pack: end
+        justify-content: flex-end
+        text-align: end
+    
+
+    .align-items-start-md 
+        -ms-flex-align: start
+        -webkit-box-align: start
+        align-items: flex-start
+    
+
+    .align-items-center-md 
+        -ms-flex-align: center
+        -webkit-box-align: center
+        align-items: center
+
+    .align-items-stretch-md 
+        -ms-flex-align: stretch
+        -webkit-box-align: stretch
+        align-items: stretch
+    
+
+    .align-items-end-md 
+        -ms-flex-align: end
+        -webkit-box-align: end
+        align-items: flex-end
+    
+
+    .justify-content-around-md 
+        -ms-flex-pack: distribute
+        justify-content: space-around
+    
+
+    .justify-content-between-md 
+        -ms-flex-pack: justify
+        -webkit-box-pack: justify
+        justify-content: space-between
+    
+
+    .first-md 
+        -ms-flex-order: -1
+        -webkit-box-ordinal-group: 0
+        order: -1
+    
+
+    .last-md 
+        -ms-flex-order: 1
+        -webkit-box-ordinal-group: 2
+        order: 1
+
+
+
+@media only screen and (min-width: 992px) 
+    .col-lg-auto 
+        -ms-flex: 0 0 auto
+            flex: 0 0 auto
+        width: auto
+        max-width: none
+    .col-lg,
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 
+        box-sizing: border-box
+        -ms-flex: 0 0 auto
+        -webkit-box-flex: 0
+        flex: 0 0 auto
+        padding-right: $gutter
+        padding-left: $gutter
+    
+
+    .col-lg 
+        -webkit-flex-grow: 1
+        -ms-flex-positive: 1
+        -webkit-box-flex: 1
+        flex-grow: 1
+        -ms-flex-preferred-size: 0
+        flex-basis: 0
+        max-width: 100%
+    
+
+    .col-lg-1 
+        -ms-flex-preferred-size: 8.333%
+        flex-basis: 8.333%
+        max-width: 8.333%
+    
+
+    .col-lg-2 
+        -ms-flex-preferred-size: 16.667%
+        flex-basis: 16.667%
+        max-width: 16.667%
+    
+
+    .col-lg-3 
+        -ms-flex-preferred-size: 25%
+        flex-basis: 25%
+        max-width: 25%
+    
+
+    .col-lg-4 
+        -ms-flex-preferred-size: 33.333%
+        flex-basis: 33.333%
+        max-width: 33.333%
+    
+
+    .col-lg-5 
+        -ms-flex-preferred-size: 41.667%
+        flex-basis: 41.667%
+        max-width: 41.667%
+    
+
+    .col-lg-6 
+        -ms-flex-preferred-size: 50%
+        flex-basis: 50%
+        max-width: 50%
+    
+
+    .col-lg-7 
+        -ms-flex-preferred-size: 58.333%
+        flex-basis: 58.333%
+        max-width: 58.333%
+    
+
+    .col-lg-8 
+        -ms-flex-preferred-size: 66.667%
+        flex-basis: 66.667%
+        max-width: 66.667%
+    
+
+    .col-lg-9 
+        -ms-flex-preferred-size: 75%
+        flex-basis: 75%
+        max-width: 75%
+    
+
+    .col-lg-10 
+        -ms-flex-preferred-size: 83.333%
+        flex-basis: 83.333%
+        max-width: 83.333%
+    
+
+    .col-lg-11 
+        -ms-flex-preferred-size: 91.667%
+        flex-basis: 91.667%
+        max-width: 91.667%
+    
+
+    .col-lg-12 
+        -ms-flex-preferred-size: 100%
+        flex-basis: 100%
+        max-width: 100%
+    
+
+    .col-lg-offset-1 
+        margin-left: 8.333%
+    
+
+    .col-lg-offset-2 
+        margin-left: 16.667%
+    
+
+    .col-lg-offset-3 
+        margin-left: 25%
+    
+
+    .col-lg-offset-4 
+        margin-left: 33.333%
+    
+
+    .col-lg-offset-5 
+        margin-left: 41.667%
+    
+
+    .col-lg-offset-6 
+        margin-left: 50%
+    
+
+    .col-lg-offset-7 
+        margin-left: 58.333%
+    
+
+    .col-lg-offset-8 
+        margin-left: 66.667%
+    
+
+    .col-lg-offset-9 
+        margin-left: 75%
+    
+
+    .col-lg-offset-10 
+        margin-left: 83.333%
+    
+
+    .col-lg-offset-11 
+        margin-left: 91.667%
+        
+    .text-center-lg
+        text-align: center
+
+    .text-right-lg
+        text-align: right
+        
+    .text-left-lg
+        text-align: left
+    
+
+    .justify-content-start-lg 
+        -ms-flex-pack: start
+        -webkit-box-pack: start
+        justify-content: flex-start
+        text-align: start
+    
+
+    .justify-content-center-lg 
+        -ms-flex-pack: center
+        -webkit-box-pack: center
+        justify-content: center
+        text-align: center
+    
+
+    .justify-content-end-lg 
+        -ms-flex-pack: end
+        -webkit-box-pack: end
+        justify-content: flex-end
+        text-align: end
+    
+
+    .align-items-start-lg 
+        -ms-flex-align: start
+        -webkit-box-align: start
+        align-items: flex-start
+    
+
+    .align-items-center-lg 
+        -ms-flex-align: center
+        -webkit-box-align: center
+        align-items: center
+
+    .align-items-center-lg 
+        -ms-flex-align: stretch
+        -webkit-box-align: stretch
+        align-items: stretch
+    
+
+    .align-items-end-lg 
+        -ms-flex-align: end
+        -webkit-box-align: end
+        align-items: flex-end
+    
+
+    .justify-content-around-lg 
+        -ms-flex-pack: distribute
+        justify-content: space-around
+    
+
+    .justify-content-between-lg 
+        -ms-flex-pack: justify
+        -webkit-box-pack: justify
+        justify-content: space-between
+    
+
+    .first-lg 
+        -ms-flex-order: -1
+        -webkit-box-ordinal-group: 0
+        order: -1
+    
+
+    .last-lg 
+        -ms-flex-order: 1
+        -webkit-box-ordinal-group: 2
+        order: 1
+    
+
+
+@media only screen and (min-width: 1200px) 
+    .col-xl-auto 
+        -ms-flex: 0 0 auto
+            flex: 0 0 auto
+        width: auto
+        max-width: none
+    .col-xl,
+    .col-xl-1,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12 
+        box-sizing: border-box
+        -ms-flex: 0 0 auto
+        -webkit-box-flex: 0
+        flex: 0 0 auto
+        padding-right: $gutter
+        padding-left: $gutter
+    
+
+    .col-xl 
+        -webkit-flex-grow: 1
+        -ms-flex-positive: 1
+        -webkit-box-flex: 1
+        flex-grow: 1
+        -ms-flex-preferred-size: 0
+        flex-basis: 0
+        max-width: 100%
+    
+
+    .col-xl-1 
+        -ms-flex-preferred-size: 8.333%
+        flex-basis: 8.333%
+        max-width: 8.333%
+    
+
+    .col-xl-2 
+        -ms-flex-preferred-size: 16.667%
+        flex-basis: 16.667%
+        max-width: 16.667%
+    
+
+    .col-xl-3 
+        -ms-flex-preferred-size: 25%
+        flex-basis: 25%
+        max-width: 25%
+    
+
+    .col-xl-4 
+        -ms-flex-preferred-size: 33.333%
+        flex-basis: 33.333%
+        max-width: 33.333%
+    
+
+    .col-xl-5 
+        -ms-flex-preferred-size: 41.667%
+        flex-basis: 41.667%
+        max-width: 41.667%
+    
+
+    .col-xl-6 
+        -ms-flex-preferred-size: 50%
+        flex-basis: 50%
+        max-width: 50%
+    
+
+    .col-xl-7 
+        -ms-flex-preferred-size: 58.333%
+        flex-basis: 58.333%
+        max-width: 58.333%
+    
+
+    .col-xl-8 
+        -ms-flex-preferred-size: 66.667%
+        flex-basis: 66.667%
+        max-width: 66.667%
+    
+
+    .col-xl-9 
+        -ms-flex-preferred-size: 75%
+        flex-basis: 75%
+        max-width: 75%
+    
+
+    .col-xl-10 
+        -ms-flex-preferred-size: 83.333%
+        flex-basis: 83.333%
+        max-width: 83.333%
+    
+
+    .col-lg-11 
+        -ms-flex-preferred-size: 91.667%
+        flex-basis: 91.667%
+        max-width: 91.667%
+    
+
+    .col-xl-12 
+        -ms-flex-preferred-size: 100%
+        flex-basis: 100%
+        max-width: 100%
+    
+
+    .col-xl-offset-1 
+        margin-left: 8.333%
+    
+
+    .col-xl-offset-2 
+        margin-left: 16.667%
+    
+
+    .col-xl-offset-3 
+        margin-left: 25%
+    
+
+    .col-xl-offset-4 
+        margin-left: 33.333%
+    
+
+    .col-xl-offset-5 
+        margin-left: 41.667%
+    
+
+    .col-xl-offset-6 
+        margin-left: 50%
+    
+
+    .col-xl-offset-7 
+        margin-left: 58.333%
+    
+
+    .col-xl-offset-8 
+        margin-left: 66.667%
+    
+
+    .col-xl-offset-9 
+        margin-left: 75%
+    
+
+    .col-xl-offset-10 
+        margin-left: 83.333%
+    
+
+    .col-xl-offset-11 
+        margin-left: 91.667%
+        
+    .text-center-xl
+        text-align: center
+
+    .text-right-xl        
+        text-align: right
+        
+    .text-left-xl        
+        text-align: left
+    
+
+    .justify-content-start-xl
+        -ms-flex-pack: start
+        -webkit-box-pack: start
+        justify-content: flex-start
+        text-align: start
+    
+
+    .justify-content-center-xl
+        -ms-flex-pack: center
+        -webkit-box-pack: center
+        justify-content: center
+        text-align: center
+    
+
+    .justify-content-end-xl
+        -ms-flex-pack: end
+        -webkit-box-pack: end
+        justify-content: flex-end
+        text-align: end
+    
+
+    .align-items-start-xl
+        -ms-flex-align: start
+        -webkit-box-align: start
+        align-items: flex-start
+    
+
+    .align-items-center-xl
+        -ms-flex-align: center
+        -webkit-box-align: center
+        align-items: center
+
+    .align-items-center-xl
+        -ms-flex-align: stretch
+        -webkit-box-align: stretch
+        align-items: stretch
+    
+
+    .align-items-end-xl
+        -ms-flex-align: end
+        -webkit-box-align: end
+        align-items: flex-end
+    
+
+    .justify-content-around-xl
+        -ms-flex-pack: distribute
+        justify-content: space-around
+    
+
+    .justify-content-between-xl
+        -ms-flex-pack: justify
+        -webkit-box-pack: justify
+        justify-content: space-between
+    
+
+    .first-xl
+        -ms-flex-order: -1
+        -webkit-box-ordinal-group: 0
+        order: -1
+    
+
+    .last-xl
+        -ms-flex-order: 1
+        -webkit-box-ordinal-group: 2
+        order: 1
+    
+
+.container 
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px)
+        max-width: 540px
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px)
+        max-width: 720px
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px)
+        max-width: 960px
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px)
+        max-width: 1160px
+        
+    @media (min-width: 1350px)
+        max-width: 1260px 
+    
+    @media (min-width: 1701px) 
+        max-width: 1320px 

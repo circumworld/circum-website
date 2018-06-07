@@ -1,0 +1,136 @@
+%clearfix
+	*zoom: 1
+	&:after
+		content: ''
+		display: table
+		line-height: 0
+		clear: both
+
+
+%vertAlign
+	*zoom: 1
+	&:before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		height: 100%
+		width: 0
+		margin-right: 0 
+
+=position($pos, $top, $right, $bottom, $left)
+	position: $pos
+	left: $left
+	right: $right
+	top: $top
+	bottom: $bottom
+
+=flex($ai: center, $j: flex-start, $d: row, $w: wrap)
+		display: -webkit-box
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flexbox
+		display: flex
+
+		-webkit-align-items: $ai
+		-ms-align-items: $ai
+		align-items: $ai
+
+		@if $j == flex-start
+			-webkit-box-pack: start
+			-ms-flex-pack: start
+
+		@else if $j == flex-end
+			-webkit-box-pack: end
+			-ms-flex-pack: end
+
+		@else if $j == space-between
+			-webkit-box-pack: justify
+			-ms-flex-pack: justify
+		@else if $j == space-around
+			-ms-flex-pack: distribute 
+
+		@else
+			-webkit-box-pack: $j
+			-ms-flex-pack: $j
+
+		-webkit-justify-content: $j
+		-moz-justify-content: $j
+		justify-content: $j
+
+		-webkit-flex-direction: $d
+		-ms-flex-direction: $d
+		flex-direction: $d 
+
+		-webkit-flex-wrap: $w
+		-ms-flex-wrap: $w
+		flex-wrap: $w
+
+=transition($style, $duration)
+	-webkit-transition: $style $duration
+	-ms-transition: $style $duration
+	transition: $style $duration
+
+
+=transform($transforms)
+	-webkit-transform: $transforms
+	-ms-transform: $transforms
+	transform: $transforms
+
+=textEnd($overflow: ellipsis)
+	overflow: hidden
+	white-space: nowrap
+	text-overflow: $overflow // values are: clip, ellipsis, or a string
+
+
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+
+	&:-moz-placeholder
+		@content
+
+	&::-moz-placeholder
+		@content
+
+	&:-ms-input-placeholder
+		@content
+
+=col-width($width)
+	-ms-flex-preferred-size: $width
+	flex-basis: $width
+	max-width: $width
+
+
+// =============================================================================
+// String Replace
+// =============================================================================
+
+=str-replace($string, $search, $replace: "")
+	$index: str-index($string, $search)
+
+	@if $index
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace)
+
+	@return $string
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+=font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg)
+	$src: null
+
+	$extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_") )
+
+	$formats: ( otf: "opentype", ttf: "truetype" )
+
+	@each $ext in $exts
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext)
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext)
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma)
+
+	@font-face
+		font-family: quote($name)
+		font-style: $style
+		font-weight: $weight
+		src: $src
