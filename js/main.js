@@ -113,6 +113,8 @@ jQuery(document).ready(function ($) {
             new Star();
         }
 
+        var pause = false;
+
         function animation() {
             ctx.globalCompositeOperation = 'source-over';
             ctx.globalAlpha = 0.8;
@@ -124,10 +126,19 @@ jQuery(document).ready(function ($) {
                 stars[i].draw();
             };
 
-            window.requestAnimationFrame(animation);
+            if(pause == false) {
+                window.requestAnimationFrame(animation);
+            } else {
+                window.cancelAnimationFrame(animation);
+            }
+        }
+        animation();
+
+        function stopDraw(){
+            pause = true;
         }
 
-        animation();
+        setTimeout(stopDraw, 5000);
     }
 
     // start preloader animation 
@@ -137,7 +148,8 @@ jQuery(document).ready(function ($) {
     function preOut(){
         $('.overlay').addClass('out');
     }
-    setTimeout(preOut, 4000);
+
+    setTimeout(preOut, 2000);
 
     wow = new WOW({
         boxClass: 'wow', // default
