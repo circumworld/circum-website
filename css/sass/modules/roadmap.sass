@@ -22,6 +22,7 @@
         height: auto 
         margin-top: 0
         width: 100%
+        margin-bottom: 300px
         
         &:before
             content: ''
@@ -108,6 +109,9 @@
             &:last-of-type
                 margin: 0 auto!important
                 text-align: center!important
+                .step__text
+                    border: 1px solid #96AFB2
+                    border-radius: 15px
                 
                 p
                     padding: 0
@@ -296,6 +300,15 @@
             bottom: -200px
             left: 50%
             transform: translateX(-50%)
+            @media (max-width: 991px)
+                bottom: -320px
+            @media (max-width: 767px)
+                bottom: -360px
+            @media (max-width: 576px)
+                bottom: -240px
+            @media (max-width: 440px)
+                width: 70%
+                bottom: -280px
 
 
 .roadmap-section
