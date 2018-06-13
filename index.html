@@ -140,9 +140,9 @@
                 <h1 class="wow fadeInDown" style="visibility: hidden;" data-wow-duration="1.5s">Smarter money for the digital network economy</h1>
                 <p class="wow fadeIn" style="visibility: hidden;" data-wow-duration="2s" data-wow-delay="1.5s">Much more than a payments provider, circum.world will utilize its tokenisation model to evolve the digital economy into the Intersection eConomy where the digital, mobile, social and physical worlds of commerce connect.</p>
 
-                <form action="#" class="mailchimp-form wow fadeIn" style="visibility: hidden;" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                <form action="https://www.getdrip.com/forms/690075307/submissions" method="post" data-drip-embedded-form="690075307" class="mailchimp-form wow fadeIn" style="visibility: hidden;" data-wow-duration="1.5s" data-wow-delay="1.5s">
                     <div class="form-group">
-                        <input type="email" name="EMAIL" class="form-control" placeholder="Enter your Email">
+                        <input type="email" name="fields[email]" class="form-control" placeholder="Enter your Email">
                     </div>
 
                     <button class="btn btn-primary">Get whitelisted</button>
@@ -931,14 +931,13 @@
 
                 <div class="footer-subscribe wow zoomIn">
                     <h3>Subscribe for more information</h3>
-                    <form action="#" class="mailchimp-form">
+
+                    <form action="https://www.getdrip.com/forms/690075307/submissions" method="post" data-drip-embedded-form="690075307" class="mailchimp-form">
                         <div class="form-group">
-                            <input type="email" name="EMAIL" class="form-control" placeholder="Enter your Email">
+                            <input type="email" name="fields[email]" class="form-control" placeholder="Enter your Email">
                         </div>
 
                         <button class="btn btn-primary">Get whitelisted</button>
-
-                        <div class="alerts"></div>
                     </form>
                 </div>
 
@@ -1017,16 +1016,14 @@
 
 
     <div id="signup" class="fncb-hide zoom-anim-dialog popup">
-        <h2>Subscribe for more information</h2>
+        <h2 data-drip-attribute="headline">Subscribe for more information</h2>
 
-        <form action="#" class="mailchimp-form">
+        <form action="https://www.getdrip.com/forms/690075307/submissions" method="post" data-drip-embedded-form="690075307" class="mailchimp-form">
             <div class="form-group">
-                <input type="email" name="EMAIL" class="form-control" placeholder="Enter your Email">
+                <input type="email" name="fields[email]" class="form-control" placeholder="Enter your Email">
             </div>
 
-            <button class="btn btn-primary">Register now</button>
-
-            <div class="alerts"></div>
+            <button class="btn btn-primary">Get whitelisted</button>
         </form>
     </div>
 
@@ -1036,6 +1033,22 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Drip -->
+    <script type="text/javascript">
+        var _dcq = _dcq || [];
+        var _dcs = _dcs || {};
+        _dcs.account = '1879904';
+    
+        (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/1879904.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+        })();
+    </script>
+    <!-- end Drip -->
 </body>
 
 </html>
