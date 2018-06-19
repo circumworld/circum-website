@@ -5,3 +5,10 @@ _site/
 _start.sh
 _infrastructure/.terraform
 _infrastructure/terraform.tfstate.*
+
+css/general.css
+css/general.css.map
+css/scss/general.css
+css/scss/general.css.map
+prepros-6.config
+*.config
