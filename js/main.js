@@ -217,6 +217,11 @@ jQuery(document).ready(function ($) {
         });
     });
 
+
+    $(".faq-item").mCustomScrollbar({
+        theme: 'light-thin'
+    });
+
     /*---------------------------
                                 PAGE ANCHORS
     ---------------------------*/
